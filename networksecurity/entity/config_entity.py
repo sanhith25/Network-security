@@ -19,6 +19,8 @@ class TrainingPipelineConfig:
         
         # Use the formatted string for folder naming
         self.artifact_dir = os.path.join(self.artifact_name, self.timestamp)
+        
+        self.model_dir = os.path.join("final_model")
 
 
 
