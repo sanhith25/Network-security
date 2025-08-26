@@ -101,11 +101,11 @@ Build and run:
 
 -docker build -t network-security:latest .
 docker run --rm \
-  -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
-  -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
-  -e AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION \
-  -p 8000:8000 \
-  network-security:latest
+     -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
+     -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
+     -e AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION \
+     -p 8000:8000 \
+    network-security:latest
 
 Base image: python:3.10-slim-bullseye. Pass AWS creds if you want S3 sync from inside the container. 
 
