@@ -1,7 +1,5 @@
 # ⚡ Network Security — ML Pipeline for Threat/Phishing Detection
 
-[![Python](https://img.shields.io/badge/Python-3.10-blue)] [![Docker](https://img.shields.io/badge/Docker-Yes-blue)] [![AWS](https://img.shields.io/badge/AWS-S3%20%26%20ECR-orange)] [![FastAPI](https://img.shields.io/badge/FastAPI-Yes-green)] [![MLflow](https://img.shields.io/badge/MLflow-Tracking-lightgrey)]
-
 ## 🛠 Tech Stack & Tools
 
 <p align="center">
