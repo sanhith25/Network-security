@@ -2,6 +2,27 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue)] [![Docker](https://img.shields.io/badge/Docker-Yes-blue)] [![AWS](https://img.shields.io/badge/AWS-S3%20%26%20ECR-orange)] [![FastAPI](https://img.shields.io/badge/FastAPI-Yes-green)] [![MLflow](https://img.shields.io/badge/MLflow-Tracking-lightgrey)]
 
+## 🛠 Tech Stack & Tools
+
+<p align="center">
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python&logoColor=white"/>
+  </a>
+  <a href="https://www.docker.com/">
+    <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+  </a>
+  <a href="https://aws.amazon.com/">
+    <img src="https://img.shields.io/badge/AWS%20S3%20%26%20ECR-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+  </a>
+  <a href="https://fastapi.tiangolo.com/">
+    <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+  </a>
+  <a href="https://mlflow.org/">
+    <img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white"/>
+  </a>
+</p>
+
+
 **End-to-end ML pipeline for detecting phishing threats in network data.** Fully Dockerized, with CI/CD, AWS cloud sync, and FastAPI endpoints for real-time predictions.
 
 ---
