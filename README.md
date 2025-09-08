@@ -34,6 +34,11 @@
   - `POST /predict` → upload CSV and get predictions  
   - `POST /upload` → simple file upload form
 
+## 📊 Screenshots  
+
+### 1️⃣ Project structure
+(Network-security/project_structure.png)  
+
 ---
 
 ## Repository Structure
