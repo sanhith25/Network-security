@@ -37,7 +37,7 @@
 ## 📊 Screenshots  
 
 ### 1️⃣ Project structure
-(Network-security/project_structure.png)  
+[Project Structure](project_structure.png)  
 
 ---
 
