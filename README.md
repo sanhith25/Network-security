@@ -1,6 +1,4 @@
-# ⚡ Network Security — ML Pipeline for Threat/Phishing Detection
-
-## 🛠 Tech Stack & Tools
+# ⚡ Network Security — ML Pipeline for Threat / Phishing Detection
 
 <p align="center">
   <a href="https://www.python.org/">
@@ -20,7 +18,6 @@
   </a>
 </p>
 
-
 **End-to-end ML pipeline for detecting phishing threats in network data.** Fully Dockerized, with CI/CD, AWS cloud sync, and FastAPI endpoints for real-time predictions.
 
 ---
@@ -32,24 +29,38 @@
 - **Guardrails:** Accuracy ≥ 0.60, Generalization gap ≤ 0.05  
 - **Experiment Tracking:** F1, Precision, Recall via MLflow  
 - **Cloud Ready:** Artifacts & models auto-uploaded to S3, Dockerized for deployment  
-- **API Endpoints:** `/train` (trigger training), `/predict` (CSV upload), `/upload` (simple form)
+- **API Endpoints:**  
+  - `POST /train` → trigger training pipeline  
+  - `POST /predict` → upload CSV and get predictions  
+  - `POST /upload` → simple file upload form
 
 ---
 
-## Structure
+## Repository Structure
+
+```text
 Network-security/
 ├─ networksecurity/
-│ ├─ components/ # ingestion, validation, transformation, training
-│ ├─ pipeline/training_pipeline.py
-│ ├─ cloud/s3_syncer.py
-├─ data_schema/schema.yaml
+│  ├─ components/
+│  │  ├─ ingestion/
+│  │  ├─ validation/
+│  │  ├─ transformation/
+│  │  └─ training/
+│  ├─ pipeline/
+│  │  └─ training_pipeline.py
+│  └─ cloud/
+│     └─ s3_syncer.py
+├─ data_schema/
+│  └─ schema.yaml
 ├─ final_model/
 ├─ saved_models/
 ├─ Artifacts/
 ├─ app.py
 ├─ Dockerfile
 ├─ requirements.txt
-└─ .github/workflows/workflow.yml
+└─ .github/
+   └─ workflows/
+      └─ workflow.yml
 
 ---
 
