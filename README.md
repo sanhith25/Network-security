@@ -1,5 +1,6 @@
 # ⚡ Network Security — ML Pipeline for Threat / Phishing Detection
 
+<<<<<<< HEAD
 <p align="center">
   <a href="https://www.python.org/">
     <img src="https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python&logoColor=white"/>
@@ -17,6 +18,13 @@
     <img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white"/>
   </a>
 </p>
+=======
+[![Python](https://img.shields.io/badge/Python-3.10-blue)] 
+[![Docker](https://img.shields.io/badge/Docker-Yes-blue)] 
+[![AWS](https://img.shields.io/badge/AWS-S3%20%26%20ECR-orange)] 
+[![FastAPI](https://img.shields.io/badge/FastAPI-Yes-green)] 
+[![MLflow](https://img.shields.io/badge/MLflow-Tracking-lightgrey)]
+>>>>>>> 4584409 (project structure added)
 
 **End-to-end ML pipeline for detecting phishing threats in network data.** Fully Dockerized, with CI/CD, AWS cloud sync, and FastAPI endpoints for real-time predictions.
 
@@ -34,10 +42,6 @@
   - `POST /predict` → upload CSV and get predictions  
   - `POST /upload` → simple file upload form
 
-## 📊 Screenshots  
-
-### 1️⃣ Project structure
-[Project Structure](project_structure.png)  
 
 ---
 
@@ -67,6 +71,7 @@ Network-security/
    └─ workflows/
       └─ workflow.yml
 
+
 ---
 
 ## Quick Start
@@ -78,34 +83,24 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 
-
 Environment Variables:
+
 MONGO_DB_URL=<mongodb-connection-string>
 MONGODB_URL_KEY=<mongodb-connection-string>
 
-Run API:
+Run API
 python app.py
 
 Access docs: http://localhost:8000/docs
 /train → run full training pipeline
 /predict → upload CSV, get predictions
 
-<<<<<<< HEAD
--docker build -t network-security:latest .
-docker run --rm \
-     -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
-     -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
-     -e AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION \
-     -p 8000:8000 \
-    network-security:latest
-=======
 Docker:
 docker build -t network-security:latest .
 docker run -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
            -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
            -e AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION \
            -p 8000:8000 network-security:latest
->>>>>>> b1812e0 (updated the readme file)
 
 ☁️ Cloud & CI/CD:
 
@@ -119,5 +114,3 @@ Unit tests & CI integration
 Richer evaluation metrics (ROC-AUC, confusion matrix)
 Parameterized AWS S3 bucket & ECR repo
 ECS/EC2 deployment with autoscaling
-
-
