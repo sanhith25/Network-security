@@ -1,6 +1,5 @@
 # ⚡ Network Security — ML Pipeline for Threat / Phishing Detection
 
-<<<<<<< HEAD
 <p align="center">
   <a href="https://www.python.org/">
     <img src="https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python&logoColor=white"/>
@@ -18,13 +17,11 @@
     <img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white"/>
   </a>
 </p>
-=======
 [![Python](https://img.shields.io/badge/Python-3.10-blue)] 
 [![Docker](https://img.shields.io/badge/Docker-Yes-blue)] 
 [![AWS](https://img.shields.io/badge/AWS-S3%20%26%20ECR-orange)] 
 [![FastAPI](https://img.shields.io/badge/FastAPI-Yes-green)] 
 [![MLflow](https://img.shields.io/badge/MLflow-Tracking-lightgrey)]
->>>>>>> 4584409 (project structure added)
 
 **End-to-end ML pipeline for detecting phishing threats in network data.** Fully Dockerized, with CI/CD, AWS cloud sync, and FastAPI endpoints for real-time predictions.
 
@@ -44,6 +41,10 @@
 
 
 ---
+## 📊 Snapshots  
+
+![Project structure](Snapshots/project_structure.png) 
+
 
 ## Repository Structure
 
